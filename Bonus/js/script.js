@@ -52,9 +52,10 @@ console.log(result);
 //Extra bonus independent exercise
 //Scrivi un programma per invertire una stringa
 const word = prompt("Insert you word");
-let reversedWord = "";
 
 function reverseString (){
+    let reversedWord = "";
+
     for(let i = word.length - 1; i >= 0; i--){
         let curLetterFromRight = word[i]
         reversedWord += curLetterFromRight;
@@ -63,3 +64,33 @@ function reverseString (){
 }
 const res = reverseString(word);
 console.log(`The reverse of word ${word} is ${res}`);
+
+
+//Si definisca un programma che ritorna la prima lettera della parola che è unica, 
+// ovvero non ha ripetizioni all'interno della stessa parola
+
+const wordInput = prompt("Insert you word");
+
+function findFirstUniqueLetter(){
+    let uniqueLetter = "";
+    
+    for (let i = 0; i < wordInput.length; i++) {
+        let currentLetterI = wordInput[i];
+        let count = 0;
+        for(let j = 0; j < wordInput.length; j++){
+            let currentLetterJ = wordInput[j];
+
+            if (currentLetterI === currentLetterJ){
+                count++;
+            }
+        }
+        if(count === 1){
+            uniqueLetter = wordInput[i];
+            break;
+        }
+    }
+    return uniqueLetter;
+} 
+
+const letter = findFirstUniqueLetter(wordInput);
+console.log(`First unique letter of word ${wordInput} is ${letter}`);
