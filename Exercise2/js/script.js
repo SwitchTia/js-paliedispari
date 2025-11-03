@@ -45,4 +45,12 @@ function isEvenOrOdd(x){
 const evenOrOdd = isEvenOrOdd(sumOfNumbers);
 console.log(evenOrOdd);
 
+//Confronting the variable evenOrOdd with the user's initial input & printing the result:
+if(evenOrOdd === userInput){
+    console.log("Congratulations!You won!");
+}
+else{
+    console.log("Oops, looks like the computer is smarter this time");
+}
+
 
