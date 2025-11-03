@@ -42,3 +42,24 @@ function capitalizeSentence(sentence) {
 }
 const result = capitalizeSentence(inputArray);
 console.log(result);
+
+
+
+
+
+
+
+//Extra bonus independent exercise
+//Scrivi un programma per invertire una stringa
+const word = prompt("Insert you word");
+let reversedWord = "";
+
+function reverseString (){
+    for(let i = word.length - 1; i >= 0; i--){
+        let curLetterFromRight = word[i]
+        reversedWord += curLetterFromRight;
+    }
+    return reversedWord;
+}
+const res = reverseString(word);
+console.log(`The reverse of word ${word} is ${res}`);
