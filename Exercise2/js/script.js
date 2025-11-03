@@ -31,4 +31,18 @@ function sum(x, y){
 const sumOfNumbers = sum(userNumber, pcNumber);
 console.log(sumOfNumbers);
 
+//fuction that returns true or false if a given as argument number x is even or odd:
+function isEvenOrOdd(x){
+    if(x % 2 === 0){
+        result = "even";
+    }
+    else{
+        result = "odd";
+    }
+    return result;
+}
+
+const evenOrOdd = isEvenOrOdd(sumOfNumbers);
+console.log(evenOrOdd);
+
 
