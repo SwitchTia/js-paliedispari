@@ -5,12 +5,17 @@
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
+
+//First user input
 const userInput = prompt("Even or odd?");
 console.log(userInput);
+//second user input
 const userNumberStr = prompt("Insert a number from 1 to 5");
 const userNumber = parseInt(userNumberStr);
 console.log(userNumber);
 
+
+//function that generates a random number given an argument of max limit of number x:
 function generateRandomNumbers(x){
     const randomNumber = Math.floor(Math.random() * x) + 1;
     return randomNumber;
@@ -18,6 +23,7 @@ function generateRandomNumbers(x){
 const pcNumber = parseInt(generateRandomNumbers(5));
 console.log(pcNumber);
 
+//function that calculates the sum of two integer numbers:
 function sum(x, y){
     const result = x + y;
     return result;
