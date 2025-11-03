@@ -3,22 +3,26 @@
 // capitalizzano tutte le parole
 
 //"pippo studia sviluppo web" --->  "Pippo Studia Sviluppo Web"
-console.log("hello");
+//console.log("hello");
+
+
+
+
 
 const input = prompt("Insert your sentence: ") //string
 
-const inputArray = [];
+//function to transform the sentence into an array of characters:
+function stringToArray(string) {
+    const inputArray = [];
 
-for (let i = 0; i < input.length; i++) {
-    let currentLetter = input[i];
-    inputArray.push(currentLetter);
+    for (let i = 0; i < input.length; i++) {
+        let currentLetter = input[i];
+        inputArray.push(currentLetter);
+    }
+    return inputArray;
 }
+const inputArray = stringToArray(input);
 console.log(inputArray);
-
-
-let firstLetter = "";
-let firstWordLetter = "";
-
 
 
 //function that capitalises each word of a sentence:
